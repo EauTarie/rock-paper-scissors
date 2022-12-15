@@ -10,7 +10,7 @@ func determinateWinner(pcChoices, userChoices string) (winner string) {
 		if pcChoices == "paper" {
 			fmt.Println("Rock being covered by Paper !\nYou loose !")
 		} else {
-			fmt.Println("Rock crushes Sissor !\nYou win !")
+			fmt.Println("Rock crushes Scissor !\nYou win !")
 		}
 	} else if userChoices == "paper" {
 		if pcChoices == "scissor" {
