@@ -22,16 +22,18 @@ func StringPrompt(label string) string {
 
 func main() {
 
-    fmt.Println("Welcome to Rock, Paper Scissors !\nChoice between : rock, paper or scissors\n//--------//")
-	z := getUserChoice("")
+    fmt.Println("--------\nWelcome to Rock, Paper Scissors !\n//--------//\nChoice between : \n- rock\n- paper\n- scissors")
+	user := getUserChoice("")
+    computer := getPcChoice()
+    fmt.Println("you have chosen : ", user, "\nmy big Conpyuteur choose : ",computer)
 
-    fmt.Println("my big Conpyuteur choose : ",getPcChoice())
-	if z == "rock" {
-		fmt.Println("bonjour")
-	}
-	fmt.Printf("Hello world !")
-    playAgain("")
-    if (z== "valentin") {
+    winner(user,computer)
+
+    rematch := playAgain("")
+
+    if (rematch == "yes" || rematch == "y" || rematch == "oui") {
         main()
+    } else {
+
     }
 }
