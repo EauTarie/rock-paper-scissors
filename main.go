@@ -22,10 +22,10 @@ func StringPrompt(label string) string {
 
 func main() {
 
-    fmt.Println("--------\nWelcome to Rock, Paper Scissors !\n//--------//\nChoice between : \n- rock\n- paper\n- scissors")
+    fmt.Println("--------\nWelcome to Rock, Paper Scissors !\n//--------//\nChoose between : \n- rock\n- paper\n- scissors")
 	user := getUserChoice("")
     computer := getPcChoice()
-    fmt.Println("you have chosen : ", user, "\nmy big Conpyuteur choose : ",computer)
+    fmt.Println("you have chosen : ", user, "\nComputer has choose : ",computer)
 
     winner(user,computer)
 
