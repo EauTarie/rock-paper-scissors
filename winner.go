@@ -1,52 +1,56 @@
 package main
 
-import "github.com/AlecAivazis/survey"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+	"bufio"
+    "os"
+    "strings"
+)
 
-func winner()
-
-
-
-
-
-func getUserChoice() userChoice string {
-	
-	selectPrompt := &survey.Select{
-		Message: "Make a selection:",
-		Options: []string{"rock", "paper", "scissors"},
-	}
-	survey.AskOne(selectPrompt, &choice)
-
-	return
+func getUserChoice(label string) string {
+    var s string
+    r := bufio.NewReader(os.Stdin)
+    for {
+        fmt.Fprint(os.Stderr, label+">")
+        s, _ = r.ReadString('\n')
+        if s != "" {
+            break
+        }
+    }
+    return strings.TrimSpace(s)
 }
 
-func getPcChoice() pcChoice string {
+ func getPcChoice()string {
 	rand.Seed(time.Now().UnixNano())
 	randNum := rand.Intn(3)
-
+	
+	pcChoice := ""
 	switch randNum {
+		case 0:
+			pcChoice = "rock"
+
 		case 1:
-			choice = "rock"
+			pcChoice = "paper"
 
 		case 2:
-			choice = "paper"
-
-		case 3:
-			choice ="scissor"
+			pcChoice ="scissors"
 	}
 	
-	return
+	return pcChoice
 }
 
 
-func duelVerdict(pcChoice, userChoice) winner string {
-	if(pcChoice == userChoice) {
-		winner = "TIE !"
-		color.Yellow("Both picked %v ! It's a tie !", pcChoice)
-	} else if((pcChoice == 'rock' && userChoice == 'papper') || (pcChoice == 'papper' && userChoice == 'scissor') || (pcChoice == 'scissor' && userChoice'rock')) {
-		winner = "User ! "
-		color.Green("You win !\nComputer picked %v and you picked %v", pcChoice, userChoice)
-	} else {
-		winner = "Computer ! "
-		color.Red("You loose !\nComputer picked %v and you picked %v", pcChoice, userChoice)
-	}
-}
+// func duelVerdict(pcChoice, userChoice) (winner string) {
+// 	if(pcChoice == userChoice) {
+// 		winner = "TIE !\n"
+// 		color.Yellow("Both picked %v ! It's a tie !", pcChoice)
+// 	} else if ((pcChoice == "rock" && userChoice == "papper") || (pcChoice == "papper" && userChoice == "scissors") || (pcChoice == "scissors" && userChoice == "rock")) {
+// 		winner = "User !"
+// 		color.Green("You win !\nComputer picked %v and you picked %v", pcChoice, userChoice)
+// 	} else {
+// 		winner = "Computer !"
+// 		color.Red("You loose !\nComputer picked %v and you picked %v", pcChoice, userChoice)
+// 	}
+// }
