@@ -22,7 +22,7 @@ func StringPrompt(label string) string {
 
 func main() {
 
-    fmt.Println("--------\nWelcome to Rock, Paper Scissors !\n//--------//\nChoose between : \n- rock\n- paper\n- scissors")
+    fmt.Println("--------\n[MINIGAME] Welcome to Rock, Paper, Scissors !\n//--------//\nChoose between : \n- rock\n- paper\n- scissors")
 	user := getUserChoice("")
     computer := getPcChoice()
     fmt.Println("you have chosen : ", user, "\nComputer has choose : ",computer)
