@@ -14,7 +14,7 @@ And yes, I do use some ressource
 
 ------------
 ## 3) How to start the mini game ?
- Simply use the `main.exe` file, and all instructions will be there !
+ Simply use the **__`rock-paper-scissors.exe`__** file, and all instructions will be there !
 
 ------------
 ## 4) What's coming next to this repository ?
