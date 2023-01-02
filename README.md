@@ -21,9 +21,9 @@ And yes, I do use some ressource
 ### I will try to improve this little minigame, such as much colorful line to be more enjoyable.
 __For exemple__ :
 1) The 3 situations cases :
-- `#FF0000` Red for defeat
-- `#FFFF00` Yellow for Tie
-- `#00FF00` Green for Win
+- `#ff0000` Red for defeat
+- `#ffff00` Yellow for Tie
+- `#00ff00` Green for Win
 
 2) Build a PVP or PVE (depends on the user)
 
