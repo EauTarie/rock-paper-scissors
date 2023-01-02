@@ -7,21 +7,23 @@ This mini-game was inspired by this repository :
 
 > I won't be able to do this without her help ! Thank's to Deeheber
 ------------
-## 3) Why this ?
+## 2) Why this ?
 I decide to make my own rock / paper / scissors version by myself on my way trying to learn and developp on GO Langage.
-And yes, I do use some ressource [Ref : 1) Credits].
+And yes, I do use some ressource
+> See : 1) Credits
+
 ------------
-## 2) How to start the mini game ?
-### Simply use the main.exe file, and all instructions will be there !
+## 3) How to start the mini game ?
+ Simply use the main.exe file, and all instructions will be there !
 
 ------------
 ## 4) What's coming next to this repository ?
 ### I will try to improve this little minigame, such as much colorful line to be more enjoyable.
-For exemple :
+__For exemple__ :
 1) The 3 situations cases :
-- Red for defeat
-- Yellow for Tie
-- Green for Win
+- `#FF0000` Red for defeat
+- `#FFFF00` Yellow for Tie
+- `#00FF00` Green for Win
 
 2) Build a PVP or PVE (depends on the user)
 
