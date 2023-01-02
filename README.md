@@ -14,16 +14,16 @@ And yes, I do use some ressource
 
 ------------
 ## 3) How to start the mini game ?
- Simply use the main.exe file, and all instructions will be there !
+ Simply use the `main.exe` file, and all instructions will be there !
 
 ------------
 ## 4) What's coming next to this repository ?
 ### I will try to improve this little minigame, such as much colorful line to be more enjoyable.
 __For exemple__ :
 1) The 3 situations cases :
-- `#ff0000` Red for defeat
-- `#ffff00` Yellow for Tie
-- `#00ff00` Green for Win
+- Red for defeat
+- Yellow for Tie
+- Green for Win
 
 2) Build a PVP or PVE (depends on the user)
 
