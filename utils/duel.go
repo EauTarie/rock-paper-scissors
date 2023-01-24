@@ -32,7 +32,7 @@ func getPcChoice() string {
 		pcChoice = "pierre"
 
 	case 1:
-		pcChoice = "papier"
+		pcChoice = "feuille"
 
 	case 2:
 		pcChoice = "ciseaux"

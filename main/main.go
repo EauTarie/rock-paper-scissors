@@ -21,11 +21,10 @@ func StringPrompt(label string) string {
 }
 
 func main() {
-
-    fmt.Println("--------\n[MINI-JEU] Bienvenu dans le jeu du Pierre Papier Ciseaux  !\n//--------//\nChoisissez entre : \n- pierre\n- papier\n- ciseaux")
+    fmt.Println("--------\n[MINIJEU] Bienvenu sur Pierre, Feuille, Ciseaux !\n//--------//\nChoisissez entre : \n- pierre\n- feuille\n- ciseaux")
 	user := getUserChoice("")
     computer := getPcChoice()
-    fmt.Println("Vous avez choisis : ", user, "\nL'ordinateur a choisis : ",computer)
+    fmt.Println("Vous avez choisi : ", user, "\nL'Ordinateur a choisi : ",computer)
 
     winner(user,computer)
 
