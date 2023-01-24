@@ -22,16 +22,16 @@ func StringPrompt(label string) string {
 
 func main() {
 
-    fmt.Println("--------\n[MINIGAME] Welcome to Rock, Paper, Scissors !\n//--------//\nChoose between : \n- rock\n- paper\n- scissors")
+    fmt.Println("--------\n[MINI-JEU] Bienvenu dans le jeu du Pierre Papier Ciseaux  !\n//--------//\nChoisissez entre : \n- pierre\n- papier\n- ciseaux")
 	user := getUserChoice("")
     computer := getPcChoice()
-    fmt.Println("you have chosen : ", user, "\nComputer has choose : ",computer)
+    fmt.Println("Vous avez choisis : ", user, "\nL'ordinateur a choisis : ",computer)
 
     winner(user,computer)
 
     rematch := playAgain("")
 
-    if (rematch == "yes" || rematch == "y" || rematch == "oui") {
+    if (rematch == "oui" || rematch == "o" || rematch == "Oui") {
         main()
     } else {
 
